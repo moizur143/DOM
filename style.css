@@ -9,21 +9,32 @@ html,body{
     width: 100%;
 }
 
-h2{
-    padding: 10px 30px;
-    font-size: 80px;
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    background-color: black;
+    
+}
+h1{
+    padding: 80px 150px;
+    border-radius: 10px;
+    color: white;
+}
+button{
+    padding: 0.5rem 1rem;
+    background-color: green;
+    font-size: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 2rem;
 
 }
-#inc{
-    padding: 15px 50px;
-    background-color: brown;
-    color: white;
-    font-size: 18px;
-}
-#dec{
-    padding: 15px 50px;
-    background-color: brown;
-    color: white;
-    font-size: 18px;
-    
+button:hover{
+    background-color: red;
+    scale: 0.92;
 }

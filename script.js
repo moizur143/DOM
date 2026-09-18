@@ -1,14 +1,50 @@
-let h2 = document.querySelector('h2');
-let inc = document.querySelector('#inc');
-let dec = document.querySelector('#dec');
+let arr = [
+    {
+        team : "CSK",
+        primary : "yellow",
+        secondary : "blue"
+    },
+    {
+        team : "MI",
+        primary : "blue",
+        secondary : "gold"
 
-let a = 0;
+    },
+    {
+        team : "RCB",
+        primary : "red",
+        secondary : "black"
+    },
+    {
+        team : "PBKS",
+        primary : "crimson",
+        secondary : "silver"
+    },
+    {
+        team : "KKR",
+        primary : "purple",
+        secondary : "gold"
+    },
+    {
+        team : "SRH",
+        primary : "orange",
+        secondary : "black"
+    },
+    {
+        team : "RR",
+        primary : "pink",
+        secondary : "blue"
+    }
+]
 
-inc.addEventListener('click',function(){
-    a++;
-    h2.innerHTML = a
-});
-dec.addEventListener('click', function(){
-    a--
-    h2.innerHTML = a
+let btn = document.querySelector('button');
+let h1 = document.querySelector('h1');
+let main = document.querySelector('main');
+
+btn.addEventListener('click',function(){
+    let winner = arr [Math.floor(Math.random()*arr.length)];
+
+    h1.innerHTML = winner.team
+    h1.style.backgroundColor = winner.secondary
+    main.style.backgroundColor = winner.primary
 })
