@@ -25,6 +25,16 @@ h1{
     border-radius: 10px;
     color: white;
 }
+h2{
+    color: white;
+
+}
+h3{
+    color: white;
+}
+h4{
+    color: white;
+}
 button{
     padding: 0.5rem 1rem;
     background-color: green;
