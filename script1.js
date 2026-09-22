@@ -1,25 +1,32 @@
-let btn = document.querySelector('button');
-let main = document.querySelector('main')
+let btn  =document.querySelector('button');
+let main =document.querySelector('main');
+let arr = ["arerrrere","hhheeellllo","hhhhyyyyyyy","mmmmemeeeee","js love","hihhhhhhhhhhhiiii"]
 
 btn.addEventListener('click',function(){
-   let div =document.createElement('div')
+   let h1 =document.createElement('h1');
+   let a = Math.floor(Math.random()*arr.length)
 
    let x = Math.random()*100
    let y = Math.random()*100
-   let c1 = Math.floor(Math.random()*256)
-   let c2 = Math.floor(Math.random()*256)
-   let c3 = Math.floor(Math.random()*256)
+   let rot =Math.random()*360
+   let scl = Math.random()*3
+   let c1 = Math.random()*256
+   let c2 = Math.random()*256
+   let c3 = Math.random()*256
 
 
-   div.style.height= '50px'
-   div.style.width= '50px'
-   div.style.position = 'absolute'
-   div.style.top = y+'%'
-   div.style.left = x+'%'
-   div.style.backgroundColor= `rgb(${c1},${c2},${c3})`
+   h1.innerHTML = arr[a]
 
+   h1.style.position = 'absolute'
 
+   h1.style.color = "white"
 
-   main.appendChild(div);
+   h1.style.left = x+'%'
+   h1.style.top = y+'%'
+   h1.style.rotate = rot+'deg'
+   h1.style.scale = scl
+   h1.style.color = `rgb(${c1},${c2},${c3})`
 
+   main.appendChild(h1)
+   
 })
