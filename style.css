@@ -16,55 +16,37 @@ main{
     background-color: black;
 }
 .card{
-    height: 300px;
-    width: 500px;
+    position: relative;
+    height: 400px;
+    width: 300px;
     background-color: white;
-    border-radius: 10px;
     padding: 20px;
+    border-radius: 10px;
 }
-.outer{
-    height: 20px;
-    width: 100%;
-    background-color: rgb(184,184,184);
-    border-radius: 50px;
+.card img{
+   height: 300px;
+   width: 100%;
+   object-fit: cover;
+   margin-bottom: 20px;
+   border-radius: 10px;
 }
-.inner{
-    height: 100%;
-    width: 00;
-    background-color: green;
-    border-radius: 50px;
-}
-.bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    
-}
-button{
-    padding: 15px 40px;
-    background-color: green;
-    border-radius: 5px;
-    font-weight: 600px;
-    border: none;
-    font-size: 20px;
-}
-button:active{
-    scale: 0.92;
-}
-h2{
-    font-size: 48px;
-    font-family: monospace;
-}
-p{
-    font-size: 28px;
-    padding-bottom: 50px;
+.card h2{
     text-align: center;
-    font-weight: 900px;
-    font-family: monospace;
+    font-size: 28px;
 }
-span{
-    color: royalblue;
+.card i{
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    background: linear-gradient(to right bottom rgb rgb(119, 17, 119), rgb(221, 47, 166));
+    color: palevioletred;
+    background-clip:text ;
+    -webkit-background-clip: text;
+    transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+    transition: all ease 0.3s;
 }
+
 
 
