@@ -1,23 +1,26 @@
-var img =document.querySelector('img');
-var i =document.querySelector('i');
+let add =document.querySelector('#add');
+let h4 =document.querySelector('h4');
+let check = 0;
 
-img.addEventListener('dblclick',function(){
-    i.style.opacity = 1
-    i.style.transform = 'translate(-50% , -50%) scale(1) rotate(0deg)'
 
-    setTimeout(function(){
-        i.style.transform = 'translate(-50% , -300%) scale(1) rotate(60deg)'
 
-    },800)
+add.addEventListener('click',function(){
+    if(check == 0){
+    h4.innerHTML = 'Friend';
+    h4.style.color = 'green'
+    add.innerHTML = 'Remove'
+    check = 1
+    }else{
+        h4.innerHTML = 'Strangers';
+        h4.style.color = 'red'
+        add.innerHTML = 'Add Friend'
 
-    setTimeout(function(){
-        i.style.opacity = 0 
-    },1000)
+        check = 0
+    }
+    
 
-    setTimeout(function(){
-        i.style.transform = 'translate(-50% , -50%) scale(0) rotate(60deg)'
-    },1200)
 })
+
 
 
 
